@@ -6,41 +6,47 @@
 }
 body{
 	background: black;
-
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	height: 100vh;
 }
 .container{
-	max-width: 1940px;
-	max-height: 1050px;
-	width: 100%;
-	
+
+	aspect-ratio: 1940 / 1050;
+	align-self: center;
+	width: 100vw;
 	background-color: white;
-	margin:auto auto;
 	display: flex;
 }
+/*.item{
+	background-color:green ;
+	width: 17.2vw;
+	height: 28.76vw;
+}*/
 .container__left{
-	max-width: 670px;
-	width: 100%;
-	padding: 0 48px;
+	width: 34.536vw;
+	padding: 3.1vw 2.474vw 1.185vw ;
 
 }
 .title{
-	font-size: 36px;
+	font-size: 1.855vw;
 	font-weight: 700;
-	line-height: 41.4px;
-	padding-top:60px;
+	line-height: 2.134vw;
+	
 }
 .text--normal{
-	margin-top:36px;
-	font-size: 16px;
+	margin-top:1.855vw;
+	font-size: 0.824vư;
 	font-weight: 700;
-	line-height: 18.4px;
+	line-height: 0.948vw;
 }
 .container__left > .text--normal:nth-child(2){
-	margin-top:24px;
+	margin-top:1.237vw;
 }
 
 .tower{
-	margin-top: 48px ;
+	margin-top: 2.474vw ;
 	display: flex;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
@@ -48,7 +54,7 @@ body{
 	font-weight: 400;
 	line-height: 18.4px;
 	align-items: center;
-	padding: 21px 0;
+	padding: 1.082vw 0;
 
 }
 
@@ -57,20 +63,20 @@ body{
 
 }
 .tower :nth-child(n+3){
-	margin-left:36px;
+	margin-left:1.855vw;
 }
 .tower :nth-child(2){
-	margin-left: 24px;
+	margin-left: 1.237vw;
 }
 .tower__divider{
 	width:1px;
-	height: 36px;
+	height: 1.855vw;
 	border: 1px solid #3B3B3B;
 }
 
 
 .container__content__floor{
-	margin-top:36px;
+	margin-top:1.855vw;
 	display: flex;
 
 }
@@ -82,65 +88,68 @@ body{
 
 .floor{
 	display: flex;
-	margin-top: 48px;
-	max-height: 588px;
+	margin-top: 2.474vw;
+	height: 30.309vw;
+
+
+
 }
 .floor > img{
-	max-width: 334px;
-	width: 100%;
-	margin-right: 48px;
+	width: 17.216vw;
+
+	margin-right: 2.474vw;
 
 
 }
 
 .floor__input{
-	max-width: 192px;
-
+	width: 9.9vw;
 	width: 100%;
-	height: 100%;
+	
 
 }
 .floor__input > img{
 	margin: 0 auto;
-		display: block;
+	display: block;
 }
 .wrapper--title{
 	display: flex;
 	margin-top: 7px;
+	justify-content: space-between;
 }
-.wrapper--title > :first-child {
+/*.wrapper--title > :first-child {
 	margin-right: 12px;
 }
 .wrapper--title > p {
 	margin-right: 12px;
-}
+}*/
+
 
 .line--short{
-	max-width: 44px;
+	width: 2.256vw;
 	height: 1px;
-	width: 100%;
 	border: 1px solid #3B3B3B;
 	margin: auto 0;	
 }
 .wrapper--content{
 	display: flex;
-	flex-wrap:wrap ;
+
 
 }
 .line--long{
 	width: 100%;
-	margin-top: 18px;
+	margin-top: 0.927vw;
 	border: 1px solid #3B3B3B;
 }
 .--circle{
-	width: 48px;
-	height: 48px;
+	width: 2.474vw;
+	height: 2.474vw;
 	border-radius: 100% ;
 	border: 1px solid black;
 	text-align: center;
-	line-height: 48px;
-	margin-right: 24px;
-	margin-top: 18px;
+	line-height: 2.474vw;
+	margin-right: 1.237vw;
+	margin-top: 0.927vw;
 }
 .--circle:nth-of-type(3n) {
     margin-right: 0px;
@@ -151,9 +160,12 @@ body{
 }
 .content__footer{
 	display: flex;
-	margin-top: 36px;
-	display: flex;
+	width: 100%;
+	margin-top: 1.855vw;
+
+	display: inline-flex;
 	justify-content: space-between;
+
 
 }
 .footer__wrapper{
@@ -168,10 +180,63 @@ body{
 	margin-left: 12px;
 }
 .container__img{
-	max-width: 1270px;
-	background-image: url("./img/right-background.png");
-	width: 100%;        
-  	height: auto;       
+	width: 65.464vw;
+	background-image: url("./img/right-background.png");     
+  	height: auto;    
+  	background-repeat: no-repeat;   
+  	background-size: cover;
+  	position: relative;
+  	margin-top:auto;
 
 
 }
+.container__img > *{
+	display: block;
+}
+.container__img > :first-child{
+	position: absolute;
+	    top: 10.515vw;
+
+}
+
+.container__img > :nth-child(2){
+	margin: 0 auto;
+}
+
+
+.content__department{
+	display: flex;
+	overflow: hidden;
+	background-color:#00000033;
+}
+.wrapper--department{
+	display: inline-flex;
+	min-width: 19.793vw;
+	height: 10.824vw;
+	width: 100%;
+	margin: 1.237vw 0 1.237vw 1.237vw;
+	padding: 1.237vw;
+	background: #FFFFFF33;
+	border: 1px solid #FFFFFF;
+}
+.wrapper--department > img{
+	margin-right: 1.237vw;
+}
+
+
+@media (min-aspect-ratio: 1940 / 1050 ) {
+    body{
+    	justify-content: center;
+    }
+    .container{
+    	width: auto;
+    	height: 100vh;
+    }
+
+
+/*    .floor > img{
+    	width: 31.8vh;
+    	height: 56vh;
+    }*/
+
+ }
