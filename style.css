@@ -1,0 +1,177 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing:border-box ;
+	font-family: Arial, Helvetica, sans-serif;
+}
+body{
+	background: black;
+
+}
+.container{
+	max-width: 1940px;
+	max-height: 1050px;
+	width: 100%;
+	
+	background-color: white;
+	margin:auto auto;
+	display: flex;
+}
+.container__left{
+	max-width: 670px;
+	width: 100%;
+	padding: 0 48px;
+
+}
+.title{
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 41.4px;
+	padding-top:60px;
+}
+.text--normal{
+	margin-top:36px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 18.4px;
+}
+.container__left > .text--normal:nth-child(2){
+	margin-top:24px;
+}
+
+.tower{
+	margin-top: 48px ;
+	display: flex;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 18.4px;
+	align-items: center;
+	padding: 21px 0;
+
+}
+
+.tower{
+	display:flex;
+
+}
+.tower :nth-child(n+3){
+	margin-left:36px;
+}
+.tower :nth-child(2){
+	margin-left: 24px;
+}
+.tower__divider{
+	width:1px;
+	height: 36px;
+	border: 1px solid #3B3B3B;
+}
+
+
+.container__content__floor{
+	margin-top:36px;
+	display: flex;
+
+}
+
+.--clicked{
+		text-decoration: underline;
+		font-weight: 700;
+}
+
+.floor{
+	display: flex;
+	margin-top: 48px;
+	max-height: 588px;
+}
+.floor > img{
+	max-width: 334px;
+	width: 100%;
+	margin-right: 48px;
+
+
+}
+
+.floor__input{
+	max-width: 192px;
+
+	width: 100%;
+	height: 100%;
+
+}
+.floor__input > img{
+	margin: 0 auto;
+		display: block;
+}
+.wrapper--title{
+	display: flex;
+	margin-top: 7px;
+}
+.wrapper--title > :first-child {
+	margin-right: 12px;
+}
+.wrapper--title > p {
+	margin-right: 12px;
+}
+
+.line--short{
+	max-width: 44px;
+	height: 1px;
+	width: 100%;
+	border: 1px solid #3B3B3B;
+	margin: auto 0;	
+}
+.wrapper--content{
+	display: flex;
+	flex-wrap:wrap ;
+
+}
+.line--long{
+	width: 100%;
+	margin-top: 18px;
+	border: 1px solid #3B3B3B;
+}
+.--circle{
+	width: 48px;
+	height: 48px;
+	border-radius: 100% ;
+	border: 1px solid black;
+	text-align: center;
+	line-height: 48px;
+	margin-right: 24px;
+	margin-top: 18px;
+}
+.--circle:nth-of-type(3n) {
+    margin-right: 0px;
+ }
+.floor__input > :last-child {
+	margin-top: 18px;
+
+}
+.content__footer{
+	display: flex;
+	margin-top: 36px;
+	display: flex;
+	justify-content: space-between;
+
+}
+.footer__wrapper{
+	display: flex;
+	height: 18px;
+}
+.wrapper__input{
+	display: flex;
+	margin-left: 24px ;
+}
+.wrapper__input > :last-child{
+	margin-left: 12px;
+}
+.container__img{
+	max-width: 1270px;
+	background-image: url("./img/right-background.png");
+	width: 100%;        
+  	height: auto;       
+
+
+}
